@@ -1,6 +1,9 @@
-sudo apt-get install chromium-chromedriver
-pip install flask_testing
-pip install selenium
+## Flask
+
+    pip install -r requirements.txt
+    cp  flaskenv-dist .flaskenv
+
+    flask run
 
 ## Apache
 
@@ -12,7 +15,13 @@ linux packages
 
     sudo apt-get install libapache2-mod-wsgi-py3 python-dev
 
-wsgi file (see ressources/my_app.wsgi)
+
+Note that the needed wsgi file is `tryflask.wsgi`
 
 
+
+## Testing
+
+    sudo apt-get install chromium-chromedriver
+    pip install -r requirements-tests.txt
 
